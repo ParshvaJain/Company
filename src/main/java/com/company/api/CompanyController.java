@@ -26,7 +26,7 @@ import com.company.feign.StockExchangeClient;
 import com.company.message.ResponseMessage;
 import com.company.model.Company;
 
-//@CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins ="https://reactapp--service.herokuapp.com")
 @RestController
 @RequestMapping(value = "/company")
 public class CompanyController {
