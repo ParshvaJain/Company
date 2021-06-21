@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(value="sector-service",url="http://localhost:8083",configuration=FeignConfig.class)
+@FeignClient(value="sector-service",url="https://sector--service.herokuapp.com",configuration=FeignConfig.class)
 public interface SectorClient {
 	
 	@RequestMapping(value = "sector/addCompany/{sector}/{company}", method = RequestMethod.GET)

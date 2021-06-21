@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 
-@FeignClient(value="exchange-service",url="http://localhost:8084",configuration=FeignConfig.class)
+@FeignClient(value="exchange-service",url="https://stockexchange--service.herokuapp.com",configuration=FeignConfig.class)
 public interface StockExchangeClient {
 	
 	@RequestMapping(value = "/stockexchange/addCompanyToExchange/{exchange}/{company}", method = RequestMethod.GET)
